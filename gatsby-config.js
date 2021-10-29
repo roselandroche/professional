@@ -3,7 +3,7 @@ module.exports = {
     title: `Professional History`,
     description: `Securely save professional information in one central location`,
     author: `@gatsbyjs`,
-    siteUrl: ``,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
