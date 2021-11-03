@@ -2,12 +2,6 @@
   Created using Gatsby's default starter
 </h1>
 
-## 🚀 Quick start
-
-1.  **Open the source code and start editing!**
-
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-
 ## 🚀 Quick start (Gatsby Cloud)
 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):

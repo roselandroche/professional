@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 const Header = ({ siteTitle }) => (
   <header
     sx={{
-      bg: `rebeccapurple`,
+      bg: "primary",
       mb: `1.45rem`,
     }}
   >
