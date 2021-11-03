@@ -4,10 +4,12 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+import theme from "../gatsby-plugin-theme-ui/index"
+
 const Header = ({ siteTitle }) => (
   <header
     sx={{
-      bg: "primary",
+      bg: theme.colors.primary,
       mb: `1.45rem`,
     }}
   >
