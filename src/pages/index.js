@@ -22,9 +22,9 @@ const Home = () => (
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
-      <Link to="/jobs/">Go to the Jobs page</Link> <br />
-      <Link to="/education/">Go to the Education page</Link> <br />
-      <Link to="/volunteer/">Go to the Volunteer page</Link> <br />
+      <Link to="/jobs/">Go to Jobs</Link> <br />
+      <Link to="/education/">Go to Education</Link> <br />
+      <Link to="/volunteer/">Go to Volunteer</Link> <br />
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
       <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
       <Link to="/using-dsg">Go to "Using DSG"</Link>
