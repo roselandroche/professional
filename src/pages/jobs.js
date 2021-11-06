@@ -10,7 +10,7 @@ const jobsContent = [
   {
     title: "Job 1",
     description: "Did x, y, and z",
-    timeline: { started: "date", left: "date" },
+    timeline: { start: "date", finish: "date" },
     managers: [
       {
         name: "John Smith",
@@ -25,54 +25,27 @@ const jobsContent = [
         contact: { phone: 1111111111, email: "example@gmail.com" },
       },
     ],
-    challenge: [
+    stories: [
       {
+        category: "Challenge",
         title: "Shoplifter",
         description: "Did stuff",
         takeaway: "Learned stuff",
       },
       {
-        title: "Project",
+        category: "Strength",
+        title: "Perseverence",
+        description: "Did stuff",
+        takeaway: "Learned stuff",
+      },
+      {
+        category: "Weakness",
+        title: "Perfectionism",
         description: "Did stuff",
         takeaway: "Learned stuff",
       },
     ],
-    strength: [
-      {
-        title: "Persistence",
-        example: "Did stuff",
-        benefit: "Learned stuff",
-      },
-      {
-        title: "Persistence",
-        example: "Did stuff",
-        benefit: "Learned stuff",
-      },
-    ],
-    weakness: [
-      {
-        title: "Persistence",
-        example: "Did stuff",
-        growth: "Learned stuff",
-      },
-      {
-        title: "Persistence",
-        example: "Did stuff",
-        growth: "Learned stuff",
-      },
-    ],
-    learned: [
-      {
-        title: "Skill 1",
-        story: "Did stuff",
-        summary: "Learned stuff",
-      },
-      {
-        title: "Skill 2",
-        story: "Did stuff",
-        summary: "Learned stuff",
-      },
-    ],
+
     whyLeft: "did not feel any potential to grow, etc...",
     officialDocs: ["tax link"],
   },
@@ -94,52 +67,24 @@ const jobsContent = [
         contact: { phone: 1111111111, email: "example@gmail.com" },
       },
     ],
-    challenge: [
+    stories: [
       {
+        category: "Challenge",
         title: "Shoplifter",
         description: "Did stuff",
         takeaway: "Learned stuff",
       },
       {
-        title: "Project",
+        category: "Strength",
+        title: "Perseverence",
         description: "Did stuff",
         takeaway: "Learned stuff",
       },
-    ],
-    strength: [
       {
-        title: "Persistence",
-        example: "Did stuff",
-        benefit: "Learned stuff",
-      },
-      {
-        title: "Persistence",
-        example: "Did stuff",
-        benefit: "Learned stuff",
-      },
-    ],
-    weakness: [
-      {
-        title: "Persistence",
-        example: "Did stuff",
-        growth: "Learned stuff",
-      },
-      {
-        title: "Persistence",
-        example: "Did stuff",
-        growth: "Learned stuff",
-      },
-    ],
-    learned: [
-      {
-        title: "Skill 1",
-        story: "Did stuff",
-        summary: "Learned stuff",
-      },
-      {
-        title: "Skill 2",
-        story: "Did stuff",
-        summary: "Learned stuff",
+        category: "Weakness",
+        title: "Perfectionism",
+        description: "Did stuff",
+        takeaway: "Learned stuff",
       },
     ],
     whyLeft: "did not feel any potential to grow, etc...",
