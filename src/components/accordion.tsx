@@ -2,7 +2,7 @@ import React, { useState } from "react"
 // import { Link } from "gatsby"
 import { Box, Heading, Text } from "theme-ui"
 
-import Manager from "./manager"
+import Connections from "./connections"
 import StoryCards from "./storyCards"
 
 const Accordion = props => {
@@ -45,7 +45,7 @@ const Accordion = props => {
                     {o.timeline.finish}
                   </Text>
                 )}
-                {o.managers && <Manager managers={o.managers} />}
+                {o.connections && <Connections connections={o.connections} />}
                 {o.stories && <StoryCards stories={o.stories} />}
                 {o.whyLeft && (
                   <Text as="p">Reason for Leaving: {o.whyLeft}</Text>
