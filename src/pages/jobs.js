@@ -11,9 +11,15 @@ const jobsContent = [
     title: "Job 1",
     description: "Did x, y, and z",
     timeline: { start: "date", finish: "date" },
-    managers: [
+    connections: [
       {
-        name: "John Smith",
+        name: "Regina Phalange",
+        relationship: "Project Manager",
+        reference: true,
+        contact: { phone: 1111111111, email: "example@gmail.com" },
+      },
+      {
+        name: "John Williams",
         relationship: "Team Leader",
         reference: true,
         contact: { phone: 1111111111, email: "example@gmail.com" },
@@ -21,7 +27,7 @@ const jobsContent = [
       {
         name: "Jane Smith",
         relationship: "Senior Manager",
-        reference: true,
+        reference: false,
         contact: { phone: 1111111111, email: "example@gmail.com" },
       },
     ],

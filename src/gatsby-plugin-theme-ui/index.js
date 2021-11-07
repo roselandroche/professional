@@ -27,19 +27,41 @@ export default {
       fontWeight: "heading",
       lineHeight: "heading",
     },
+    body: {
+      fontFamily: "heading",
+      fontWeight: "body",
+      lineHeight: "body",
+    },
   },
   styles: {
     h1: {
       variant: "text.heading",
-      mt: 4,
-      mb: 4,
+      my: 4,
       fontSize: 8,
     },
     h2: {
       variant: "text.heading",
-      mt: 3,
-      mb: 3,
+      my: 3,
       fontSize: 7,
+    },
+    h3: {
+      variant: "text.heading",
+      my: 2,
+      fontSize: 6,
+    },
+    h4: {
+      variant: "text.heading",
+      my: 1,
+      fontSize: 5,
+    },
+    h5: {
+      variant: "text.heading",
+      my: 1,
+      fontSize: 4,
+    },
+    p: {
+      variant: "text.body",
+      fontSize: 2,
     },
     a: {
       color: "primary",
