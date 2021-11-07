@@ -35,11 +35,13 @@ const Accordion = props => {
                 )}
               </Box>
               <Box sx={{ display: active !== i ? "none" : "block" }}>
-                {o.description && <Text as="p">{o.description}</Text>}
+                {o.description && (
+                  <Text as="p">Description: {o.description}</Text>
+                )}
                 {o.timeline.start && o.timeline.finish && (
                   <Text as="p">
-                    {o.timeline.start}
-                    {" - "}
+                    From: {o.timeline.start}
+                    {" to "}
                     {o.timeline.finish}
                   </Text>
                 )}
