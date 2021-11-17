@@ -35,8 +35,10 @@ const jobsContent = [
       {
         category: "Challenge",
         title: "Shoplifter",
-        description: "Did stuff",
-        takeaway: "Learned stuff",
+        description:
+          "Customer looked suspicious. I paid close attention, noticed they slipped something into their pocket. Notified the security personnel, watched them until authorities arrived.",
+        takeaway:
+          "Sometimes the best plan of action is to call the proper person.",
       },
       {
         category: "Strength",
