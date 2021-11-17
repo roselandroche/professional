@@ -6,6 +6,10 @@ const storyCards = props => {
 
   return (
     <Box>
+      <Heading as="h3" variant="styles.h3">
+        Stories
+      </Heading>
+
       {stories &&
         stories.map((story, i) => {
           return (
