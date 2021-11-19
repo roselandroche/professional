@@ -1,7 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { Heading } from "theme-ui"
+import { Heading, Text } from "theme-ui"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -31,19 +29,11 @@ const Home = () => (
       Welcome to:
       <br /> Professional History!
     </Heading>
-    <p>
+    <Text as="p" variant="styles.p">
       We aspire to create a convenient and secure space to save all things jobs
       related, if and when you are moving between jobs.
-    </p>
+    </Text>
     <StaggeredCards cards={cards} />
-    <p>
-      <Link to="/jobs/">Go to Jobs</Link> <br />
-      <Link to="/education/">Go to Education</Link> <br />
-      <Link to="/volunteer/">Go to Volunteer</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
   </Layout>
 )
 

@@ -7,7 +7,7 @@ export default {
   },
   fonts: {
     body: "Raleway, system-ui, sans-serif",
-    heading: "Raleway, system-ui, sans-serif",
+    heading: "limelight, Raleway, system-ui, sans-serif",
     monospace: "Menlo, monospace",
   },
   fontWeights: {
@@ -28,7 +28,7 @@ export default {
       lineHeight: "heading",
     },
     body: {
-      fontFamily: "heading",
+      fontFamily: "body",
       fontWeight: "body",
       lineHeight: "body",
     },
@@ -64,10 +64,11 @@ export default {
       fontSize: 2,
     },
     a: {
-      color: "primary",
+      color: "inherit",
+      textDecoration: "none",
 
       ":hover, :focus": {
-        color: "secondary",
+        textDecoration: "underline",
       },
     },
   },

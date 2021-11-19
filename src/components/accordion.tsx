@@ -36,10 +36,12 @@ const Accordion = props => {
               </Box>
               <Box sx={{ display: active !== i ? "none" : "block" }}>
                 {o.description && (
-                  <Text as="p">Description: {o.description}</Text>
+                  <Text as="p" variant="styles.p">
+                    Description: {o.description}
+                  </Text>
                 )}
                 {o.timeline.start && o.timeline.finish && (
-                  <Text as="p">
+                  <Text as="p" variant="styles.p">
                     From: {o.timeline.start}
                     {" to "}
                     {o.timeline.finish}
@@ -48,10 +50,14 @@ const Accordion = props => {
                 {o.connections && <Connections connections={o.connections} />}
                 {o.stories && <StoryCards stories={o.stories} />}
                 {o.whyLeft && (
-                  <Text as="p">Reason for Leaving: {o.whyLeft}</Text>
+                  <Text as="p" variant="styles.p">
+                    Reason for Leaving: {o.whyLeft}
+                  </Text>
                 )}
                 {o.officialDocs && (
-                  <Text as="p">Link to official documentation-TBD</Text>
+                  <Text as="p" variant="styles.p">
+                    Link to official documentation-TBD
+                  </Text>
                 )}
               </Box>
             </Box>
