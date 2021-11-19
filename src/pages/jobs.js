@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { Heading } from "theme-ui"
+import { Heading, Text } from "theme-ui"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -106,7 +106,7 @@ const Jobs = () => (
     <Heading as="h1" variant="styles.h1">
       Hi from the Jobs page
     </Heading>
-    <p>
+    <Text as="p" variant="styles.p">
       This page will store a list of your work history. Upon choosing one of the
       jobs you will be able to view the title and description of the job, your
       manager(s), your reference(s), the complete contact information, at least
@@ -114,7 +114,7 @@ const Jobs = () => (
       action, at least 3 things learned, an example of a weakness in action, a
       link to a page containing tax documents (highly secure), why you left,
       timeline
-    </p>
+    </Text>
     <Accordion jobs={jobsContent} />
     <Link to="/">Return Home</Link>
   </Layout>
