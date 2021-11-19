@@ -1,6 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import { Heading, Text } from "theme-ui"
 
 import Layout from "../components/layout"
@@ -36,14 +34,6 @@ const Home = () => (
       related, if and when you are moving between jobs.
     </Text>
     <StaggeredCards cards={cards} />
-    <p>
-      <Link to="/jobs/">Go to Jobs</Link> <br />
-      <Link to="/education/">Go to Education</Link> <br />
-      <Link to="/volunteer/">Go to Volunteer</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
   </Layout>
 )
 

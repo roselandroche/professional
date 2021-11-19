@@ -5,13 +5,14 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Box } from "theme-ui"
 
-import * as React from "react"
+// import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <Box sx={{ minHeight: "100vh" }}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         sx={{
@@ -35,17 +36,9 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          sx={{
-            mt: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
       </div>
-    </>
+      <Footer />
+    </Box>
   )
 }
 

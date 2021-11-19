@@ -27,7 +27,7 @@ const StaggeredCards = props => {
                   py: 3,
                   px: 4,
                   my: 3,
-                  ml: align ? i % 2 !== 0 && "auto" : i % 2 === 0 && "auto",
+                  ml: align ? i % 2 === 0 && "auto" : i % 2 !== 0 && "auto",
                 }}
               >
                 {card.title && (

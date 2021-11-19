@@ -64,10 +64,11 @@ export default {
       fontSize: 2,
     },
     a: {
-      color: "primary",
+      color: "inherit",
+      textDecoration: "none",
 
       ":hover, :focus": {
-        color: "secondary",
+        textDecoration: "underline",
       },
     },
   },
