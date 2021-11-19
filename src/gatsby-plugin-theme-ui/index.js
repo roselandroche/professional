@@ -6,8 +6,8 @@ export default {
     secondary: "#ff6347",
   },
   fonts: {
-    body: "system-ui, sans-serif",
-    heading: "system-ui, sans-serif",
+    body: "Raleway, system-ui, sans-serif",
+    heading: "Raleway, system-ui, sans-serif",
     monospace: "Menlo, monospace",
   },
   fontWeights: {

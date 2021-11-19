@@ -1,8 +1,13 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { Box, Flex, Heading, Text } from "theme-ui"
 
 const StaggeredCards = props => {
   const { cards } = props
+  const [align, setAlign] = useState(false)
+
+  const handleClick = () => {
+    setAlign(!align)
+  }
 
   return (
     <Box>
@@ -12,6 +17,7 @@ const StaggeredCards = props => {
             return (
               <Flex
                 key={i}
+                onClick={handleClick}
                 sx={{
                   flexDirection: "column",
                   alignItems: "center",
@@ -21,7 +27,7 @@ const StaggeredCards = props => {
                   py: 3,
                   px: 4,
                   my: 3,
-                  ml: i % 2 !== 0 && "auto",
+                  ml: align ? i % 2 !== 0 && "auto" : i % 2 === 0 && "auto",
                 }}
               >
                 {card.title && (
