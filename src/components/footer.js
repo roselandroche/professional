@@ -18,19 +18,23 @@ const Footer = () => (
         maxWidth: 960,
         p: `1.45rem 1.0875rem`,
         color: theme.colors.background,
+
+        "*": {
+          fontFamily: theme.fonts.body,
+          color: "inherit",
+          textDecoration: "none",
+        },
+
+        a: {
+          ":hover, :focus": {
+            textDecoration: "underline",
+          },
+        },
       }}
     >
       <Flex
         sx={{
           flexDirection: "column",
-          a: {
-            color: "inherit",
-            textDecoration: "none",
-
-            ":hover, :focus": {
-              textDecoration: "underline",
-            },
-          },
         }}
       >
         <GatsbyLink to="/">Home</GatsbyLink>
@@ -38,14 +42,6 @@ const Footer = () => (
       <Flex
         sx={{
           flexDirection: "column",
-          a: {
-            color: "inherit",
-            textDecoration: "none",
-
-            ":hover, :focus": {
-              textDecoration: "underline",
-            },
-          },
         }}
       >
         <GatsbyLink to="/jobs/">Jobs</GatsbyLink>
@@ -53,13 +49,15 @@ const Footer = () => (
         <GatsbyLink to="/volunteer/">Volunteer</GatsbyLink>
       </Flex>
       <Flex sx={{ flexDirection: "column" }}>
-        © {new Date().getFullYear()}
-        <br />
-        Built with
-        {` `}
-        <ThemeLink variant="styles.a" href="https://www.gatsbyjs.com">
-          Gatsby
-        </ThemeLink>
+        <Box>
+          © {new Date().getFullYear()}
+          <br />
+          Built with
+          {` `}
+          <ThemeLink variant="styles.a" href="https://www.gatsbyjs.com">
+            Gatsby
+          </ThemeLink>
+        </Box>
         <StaticImage
           src="../images/gatsby-astronaut.png"
           width={100}
