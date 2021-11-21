@@ -22,7 +22,9 @@ const Header = ({ siteTitle }) => (
           fontFamily: theme.fonts.heading,
           color: "white",
           textDecoration: "none",
+        },
 
+        a: {
           ":hover, :focus": {
             textDecoration: "underline",
           },

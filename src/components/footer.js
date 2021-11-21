@@ -23,7 +23,9 @@ const Footer = () => (
           fontFamily: theme.fonts.body,
           color: "inherit",
           textDecoration: "none",
+        },
 
+        a: {
           ":hover, :focus": {
             textDecoration: "underline",
           },
