@@ -18,19 +18,21 @@ const Footer = () => (
         maxWidth: 960,
         p: `1.45rem 1.0875rem`,
         color: theme.colors.background,
+
+        "*": {
+          fontFamily: theme.fonts.body,
+          color: "inherit",
+          textDecoration: "none",
+
+          ":hover, :focus": {
+            textDecoration: "underline",
+          },
+        },
       }}
     >
       <Flex
         sx={{
           flexDirection: "column",
-          a: {
-            color: "inherit",
-            textDecoration: "none",
-
-            ":hover, :focus": {
-              textDecoration: "underline",
-            },
-          },
         }}
       >
         <GatsbyLink to="/">Home</GatsbyLink>
@@ -38,14 +40,6 @@ const Footer = () => (
       <Flex
         sx={{
           flexDirection: "column",
-          a: {
-            color: "inherit",
-            textDecoration: "none",
-
-            ":hover, :focus": {
-              textDecoration: "underline",
-            },
-          },
         }}
       >
         <GatsbyLink to="/jobs/">Jobs</GatsbyLink>
