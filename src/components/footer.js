@@ -53,13 +53,15 @@ const Footer = () => (
         <GatsbyLink to="/volunteer/">Volunteer</GatsbyLink>
       </Flex>
       <Flex sx={{ flexDirection: "column" }}>
-        © {new Date().getFullYear()}
-        <br />
-        Built with
-        {` `}
-        <ThemeLink variant="styles.a" href="https://www.gatsbyjs.com">
-          Gatsby
-        </ThemeLink>
+        <Box>
+          © {new Date().getFullYear()}
+          <br />
+          Built with
+          {` `}
+          <ThemeLink variant="styles.a" href="https://www.gatsbyjs.com">
+            Gatsby
+          </ThemeLink>
+        </Box>
         <StaticImage
           src="../images/gatsby-astronaut.png"
           width={100}
