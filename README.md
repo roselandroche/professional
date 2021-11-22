@@ -1,7 +1,3 @@
-<h1 align="center">
-  Created using Gatsby's default starter
-</h1>
-
 ## Personal Project: Professional History
 
 The goal of this project is to create a safe, convenient, and central place for people to save the information they need when searching for a job.
@@ -11,6 +7,10 @@ This information includes, but is not limited to, job history and the details th
 # Deployed at:
 
 https://professional-history.netlify.app/
+
+<h1 align="center">
+  Created using Gatsby's default starter
+</h1>
 
 ## 🎓 Learning Gatsby
 
