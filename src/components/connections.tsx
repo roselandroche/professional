@@ -10,18 +10,29 @@ const Connections = props => {
       <Heading as="h3" variant="styles.h3">
         Connections
       </Heading>
-      <Flex sx={{ justifyContent: "space-between" }}>
+      <Flex
+        sx={{
+          justifyContent: "space-between",
+          flexDirection: "column",
+
+          "@media(min-width: 600px)": { flexDirection: "row" },
+        }}
+      >
         {connections &&
           connections.map((connection, i) => {
             return (
               <Box
                 key={i}
                 sx={{
-                  width: "1/3%",
+                  width: "100%",
                   border: `2px solid gray`,
                   borderRadius: "8px",
                   p: 3,
                   my: 2,
+
+                  "@media(min-width: 600px)": {
+                    width: "30%",
+                  },
                 }}
               >
                 <Heading as="h4" variant="styles.h4">

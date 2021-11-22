@@ -13,6 +13,7 @@ const Footer = () => (
   >
     <Flex
       sx={{
+        flexDirection: "column",
         justifyContent: "space-between",
         m: `0 auto`,
         maxWidth: 960,
@@ -29,6 +30,10 @@ const Footer = () => (
           ":hover, :focus": {
             textDecoration: "underline",
           },
+        },
+
+        "@media(min-width: 460px)": {
+          flexDirection: "row",
         },
       }}
     >
@@ -48,7 +53,12 @@ const Footer = () => (
         <GatsbyLink to="/education/">Education</GatsbyLink>
         <GatsbyLink to="/volunteer/">Volunteer</GatsbyLink>
       </Flex>
-      <Flex sx={{ flexDirection: "column" }}>
+      <Flex
+        sx={{
+          flexDirection: "column",
+          img: { objectFit: "contain!important", width: "fit-content" },
+        }}
+      >
         <Box>
           © {new Date().getFullYear()}
           <br />
@@ -64,7 +74,9 @@ const Footer = () => (
           quality={100}
           formats={["auto", "webp", "avif"]}
           alt="A Gatsby astronaut"
-          style={{ marginBottom: `1.45rem` }}
+          style={{
+            marginBottom: `1.45rem`,
+          }}
         />
       </Flex>
     </Flex>
