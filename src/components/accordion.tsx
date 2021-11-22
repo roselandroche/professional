@@ -26,7 +26,7 @@ const Accordion = props => {
             <Box key={i}>
               <Box
                 onClick={() => handleClick(i)}
-                sx={{ borderBottom: `2px solid gray` }}
+                sx={{ borderBottom: `2px solid gray`, cursor: "pointer" }}
               >
                 {o.title && (
                   <Heading as="h2" variant="styles.h2">

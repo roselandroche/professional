@@ -37,27 +37,63 @@ export default {
     h1: {
       variant: "text.heading",
       my: 4,
-      fontSize: 8,
+      fontSize: 5,
+
+      "@media(min-width: 768px)": {
+        fontSize: 7,
+      },
+
+      "@media(min-width: 1440px)": {
+        fontSize: 8,
+      },
     },
     h2: {
       variant: "text.heading",
       my: 3,
-      fontSize: 7,
+      fontSize: 5,
+
+      "@media(min-width: 768px)": {
+        fontSize: 6,
+      },
+
+      "@media(min-width: 1440px)": {
+        fontSize: 7,
+      },
     },
     h3: {
       variant: "text.heading",
       my: 2,
-      fontSize: 6,
+      fontSize: 4,
+
+      "@media(min-width: 768px)": {
+        fontSize: 5,
+      },
+
+      "@media(min-width: 1440px)": {
+        fontSize: 6,
+      },
     },
     h4: {
       variant: "text.heading",
       my: 1,
-      fontSize: 5,
+      fontSize: 3,
+
+      "@media(min-width: 768px)": {
+        fontSize: 4,
+      },
+
+      "@media(min-width: 1440px)": {
+        fontSize: 5,
+      },
     },
     h5: {
       variant: "text.heading",
       my: 1,
-      fontSize: 4,
+      fontSize: 3,
+
+      "@media(min-width: 1440px)": {
+        fontSize: 4,
+      },
     },
     p: {
       variant: "text.body",

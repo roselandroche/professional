@@ -21,13 +21,17 @@ const StaggeredCards = props => {
                 sx={{
                   flexDirection: "column",
                   alignItems: "center",
-                  width: "50%",
+                  width: "100%",
                   border: `2px solid gray`,
                   borderRadius: "8px",
                   py: 3,
                   px: 4,
                   my: 3,
-                  ml: align ? i % 2 === 0 && "auto" : i % 2 !== 0 && "auto",
+
+                  "@media(min-width: 540px)": {
+                    ml: align ? i % 2 === 0 && "auto" : i % 2 !== 0 && "auto",
+                    width: "50%",
+                  },
                 }}
               >
                 {card.title && (
