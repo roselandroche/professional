@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Accordion from "../components/accordion"
 
-const jobsContent = [
+const jobs = [
   {
     title: "Job 1",
     description: "Did x, y, and z",
@@ -103,7 +103,7 @@ const Jobs = () => (
   <Layout>
     <Seo title="Jobs" />
     <Heading as="h1" variant="styles.h1">
-      Hi from the Jobs page
+      Jobs
     </Heading>
     <Text as="p" variant="styles.p">
       This page will store a list of your work history. Upon choosing one of the
@@ -114,7 +114,7 @@ const Jobs = () => (
       link to a page containing tax documents (highly secure), why you left,
       timeline
     </Text>
-    <Accordion jobs={jobsContent} />
+    <Accordion content={jobs} />
   </Layout>
 )
 

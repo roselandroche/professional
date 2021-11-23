@@ -6,7 +6,7 @@ import Connections from "./connections"
 import StoryCards from "./storyCards"
 
 const Accordion = props => {
-  const { jobs } = props
+  const { content } = props
   const [active, setActive] = useState(null)
 
   const handleClick = i => {
@@ -19,9 +19,9 @@ const Accordion = props => {
 
   return (
     <Box>
-      {jobs &&
-        jobs.length > 1 &&
-        jobs.map((o, i) => {
+      {content &&
+        content.length > 1 &&
+        content.map((o, i) => {
           return (
             <Box key={i}>
               <Box
@@ -54,6 +54,7 @@ const Accordion = props => {
                     Reason for Leaving: {o.whyLeft}
                   </Text>
                 )}
+                {o.specialAwards && <StoryCards stories={o.specialAwards} />}
                 {o.officialDocs && (
                   <Text as="p" variant="styles.p">
                     Link to official documentation-TBD
