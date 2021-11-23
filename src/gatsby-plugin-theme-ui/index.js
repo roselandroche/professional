@@ -1,4 +1,6 @@
 export default {
+  headerHeight: 85,
+  footerHeight: 220,
   colors: {
     text: "#333",
     background: "#fff",
