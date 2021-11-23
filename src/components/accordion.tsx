@@ -48,13 +48,15 @@ const Accordion = props => {
                   </Text>
                 )}
                 {o.connections && <Connections connections={o.connections} />}
-                {o.stories && <StoryCards stories={o.stories} />}
+                {o.stories && <StoryCards heading={true} stories={o.stories} />}
                 {o.whyLeft && (
                   <Text as="p" variant="styles.p">
                     Reason for Leaving: {o.whyLeft}
                   </Text>
                 )}
-                {o.specialAwards && <StoryCards stories={o.specialAwards} />}
+                {o.specialAwards && (
+                  <StoryCards heading={false} stories={o.specialAwards} />
+                )}
                 {o.officialDocs && (
                   <Text as="p" variant="styles.p">
                     Link to official documentation-TBD
