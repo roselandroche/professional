@@ -2,13 +2,15 @@ import * as React from "react"
 import { Box, Heading, Text } from "theme-ui"
 
 const storyCards = props => {
-  const { stories } = props
+  const { heading, stories } = props
 
   return (
     <Box>
-      <Heading as="h3" variant="styles.h3">
-        Stories
-      </Heading>
+      {heading && (
+        <Heading as="h3" variant="styles.h3">
+          Stories
+        </Heading>
+      )}
 
       {stories &&
         stories.map((story, i) => {

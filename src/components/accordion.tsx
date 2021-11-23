@@ -6,7 +6,7 @@ import Connections from "./connections"
 import StoryCards from "./storyCards"
 
 const Accordion = props => {
-  const { jobs } = props
+  const { content } = props
   const [active, setActive] = useState(null)
 
   const handleClick = i => {
@@ -19,9 +19,9 @@ const Accordion = props => {
 
   return (
     <Box>
-      {jobs &&
-        jobs.length > 1 &&
-        jobs.map((o, i) => {
+      {content &&
+        content.length > 1 &&
+        content.map((o, i) => {
           return (
             <Box key={i}>
               <Box
@@ -48,11 +48,14 @@ const Accordion = props => {
                   </Text>
                 )}
                 {o.connections && <Connections connections={o.connections} />}
-                {o.stories && <StoryCards stories={o.stories} />}
+                {o.stories && <StoryCards heading={true} stories={o.stories} />}
                 {o.whyLeft && (
                   <Text as="p" variant="styles.p">
                     Reason for Leaving: {o.whyLeft}
                   </Text>
+                )}
+                {o.specialAwards && (
+                  <StoryCards heading={false} stories={o.specialAwards} />
                 )}
                 {o.officialDocs && (
                   <Text as="p" variant="styles.p">
