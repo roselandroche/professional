@@ -31,7 +31,7 @@ const Connections = props => {
                   my: 2,
 
                   "@media(min-width: 600px)": {
-                    width: "30%",
+                    width: connection.length >= 3 ? "30%" : "50%",
                   },
                 }}
               >
