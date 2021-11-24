@@ -1,5 +1,4 @@
 import * as React from "react"
-// import { Link } from "gatsby"
 import { Box, Flex, Heading, Text } from "theme-ui"
 
 const Connections = props => {
