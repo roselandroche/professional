@@ -1,9 +1,9 @@
 import * as React from "react"
-import { Heading, Text } from "theme-ui"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import StaggeredCards from "../components/staggeredCards"
+import Introduction from "../components/introduction"
 
 let cards = [
   {
@@ -25,14 +25,12 @@ let cards = [
 const Home = () => (
   <Layout>
     <Seo title="Home" />
-    <Heading as="h1" variant="styles.h1">
-      Welcome to:
-      <br /> Professional History!
-    </Heading>
-    <Text as="p" variant="styles.p">
-      We aspire to create a convenient and secure space to save all things jobs
-      related, if and when you are moving between jobs.
-    </Text>
+    <Introduction
+      heading={"Welcome to: Professional History!"}
+      description={
+        "We aspire to create a convenient and secure space to save all things jobs related, if and when you are moving between jobs."
+      }
+    />
     <StaggeredCards cards={cards} />
   </Layout>
 )

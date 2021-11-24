@@ -1,5 +1,4 @@
 import * as React from "react"
-// import { Link } from "gatsby"
 import { Box, Flex, Heading, Text } from "theme-ui"
 
 const Connections = props => {
@@ -31,7 +30,7 @@ const Connections = props => {
                   my: 2,
 
                   "@media(min-width: 600px)": {
-                    width: "30%",
+                    width: connection.length >= 3 ? "30%" : "50%",
                   },
                 }}
               >
