@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-// import { Link } from "gatsby"
 import { Box, Heading, Text } from "theme-ui"
 
 import Connections from "./connections"
