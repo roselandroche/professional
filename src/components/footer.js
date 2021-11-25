@@ -49,9 +49,15 @@ const Footer = () => (
           flexDirection: "column",
         }}
       >
-        <GatsbyLink to="/jobs/">Jobs</GatsbyLink>
-        <GatsbyLink to="/education/">Education</GatsbyLink>
-        <GatsbyLink to="/volunteer/">Volunteer</GatsbyLink>
+        <GatsbyLink id="job-link" to="/jobs/">
+          Jobs
+        </GatsbyLink>
+        <GatsbyLink id="edu-link" to="/education/">
+          Education
+        </GatsbyLink>
+        <GatsbyLink id="vol-link" to="/volunteer/">
+          Volunteer
+        </GatsbyLink>
       </Flex>
       <Flex
         sx={{

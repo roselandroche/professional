@@ -8,6 +8,6 @@ describe("Accessibility tests", () => {
     cy.checkA11y()
   })
   it("Navigates to page 2 and checks for accessibility violations", () => {
-    cy.findByText(/jobs/i).click().checkA11y()
+    cy.get("#job-link").click().checkA11y()
   })
 })
