@@ -8,8 +8,16 @@ This information includes, but is not limited to, job history and the details th
 
 https://professional-history.netlify.app/
 
+# Utilizing the following Tech Stack:
+
+- Gatsby
+- React
+- Typescript
+- JavaScript
+- Cypress
+
 <h1 align="center">
-  Created using Gatsby's default starter
+  Created using Gatsby's default starter as a base
 </h1>
 
 ## 🎓 Learning Gatsby
