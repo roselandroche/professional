@@ -13,6 +13,7 @@ https://professional-history.netlify.app/
 - Gatsby
 - React
 - Typescript
+- Theme UI
 - JavaScript
 - Cypress
 
