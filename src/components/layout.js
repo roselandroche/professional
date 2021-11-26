@@ -5,6 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 /** @jsx jsx */
+import * as React from "react"
 import { jsx, Box } from "theme-ui"
 
 // import * as React from "react"
@@ -27,11 +28,8 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <Box>
-      <Header
-        aria-label="Header"
-        siteTitle={data.site.siteMetadata?.title || `Title`}
-      />
+    <>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <Box
         sx={{
           minHeight: `calc(100vh - ${theme.headerHeight}px - ${theme.footerHeight}px)`,
@@ -40,10 +38,10 @@ const Layout = ({ children }) => {
           p: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main aria-label="Main">{children}</main>
+        <main>{children}</main>
       </Box>
-      <Footer aria-label="Footer" />
-    </Box>
+      <Footer />
+    </>
   )
 }
 
