@@ -7,6 +7,7 @@ import theme from "../gatsby-plugin-theme-ui/index"
 
 const Footer = () => (
   <Box
+    role="contentinfo"
     sx={{
       bg: theme.colors.primary,
     }}

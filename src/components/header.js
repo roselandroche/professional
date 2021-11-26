@@ -7,6 +7,7 @@ import theme from "../gatsby-plugin-theme-ui/index"
 
 const Header = ({ siteTitle }) => (
   <Box
+    role="banner"
     sx={{
       bg: theme.colors.primary,
       mb: `1.45rem`,

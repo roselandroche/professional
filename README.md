@@ -16,6 +16,8 @@ https://professional-history.netlify.app/
 - Theme UI
 - JavaScript
 - Cypress
+  - Testing for:
+    - Accessibility
 
 <h1 align="center">
   Created using Gatsby's default starter as a base
