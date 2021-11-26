@@ -28,8 +28,11 @@ const Layout = ({ children }) => {
 
   return (
     <Box>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
+      <Header
+        aria-label="Header"
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+      />
+      <Box
         sx={{
           minHeight: `calc(100vh - ${theme.headerHeight}px - ${theme.footerHeight}px)`,
           m: `0 auto`,
@@ -37,9 +40,9 @@ const Layout = ({ children }) => {
           p: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-      </div>
-      <Footer />
+        <main aria-label="Main">{children}</main>
+      </Box>
+      <Footer aria-label="Footer" />
     </Box>
   )
 }

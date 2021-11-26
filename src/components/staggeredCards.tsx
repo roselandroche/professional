@@ -35,7 +35,7 @@ const StaggeredCards = props => {
                 }}
               >
                 {card.title && (
-                  <Heading as="h4" variant="styles.h4" children={card.title} />
+                  <Heading as="h2" variant="styles.h2" children={card.title} />
                 )}
                 {card.content && (
                   <Text as="p" variant="styles.p" children={card.content} />
